@@ -2,6 +2,7 @@
 import asyncio
 import os
 import logging
+from welcome import router as welcome_router
 from moderation import router as moderation_router
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
@@ -30,6 +31,7 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher()
 dp.include_router(moderation_router)
 dp.include_router(antispam_router)
+dp.include_router(welcome_router)
 xp_son_mesaj = {}
 
 
