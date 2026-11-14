@@ -7,7 +7,7 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
 from aiogram.types import Message, ChatMemberUpdated
 from dotenv import load_dotenv
-
+from antispam import router as antispam_router
 from database import veritabani_kur, xp_ekle
 from config import (
     BOT_NAME,
@@ -29,6 +29,7 @@ if not TOKEN:
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 dp.include_router(moderation_router)
+dp.include_router(antispam_router)
 xp_son_mesaj = {}
 
 
