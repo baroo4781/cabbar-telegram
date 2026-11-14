@@ -14,3 +14,8 @@ XP_COOLDOWN = 45
 MAX_WARNINGS = 3
 
 DEFAULT_WELCOME = "👋 Grubumuza hoş geldin {isim}!"
+
+ANTI_SPAM_LIMIT = 5
+ANTI_SPAM_SECONDS = 8
+
+LOG_ENABLED = True
