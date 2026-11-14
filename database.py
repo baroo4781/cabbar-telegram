@@ -1,12 +1,12 @@
 
+import os
 import aiosqlite
 
-DB_NAME = "cabbar.sqlite3"
+DB_NAME = os.getenv("DB_PATH", "cabbar.sqlite3")
 
 
 async def veritabani_kur():
     async with aiosqlite.connect(DB_NAME) as db:
-
         await db.execute("""
         CREATE TABLE IF NOT EXISTS warnings (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
