@@ -1,0 +1,16 @@
+
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+BOT_NAME = "CABBAR MANAGER"
+BOT_VERSION = "1.0.0"
+
+LANGUAGE = "tr"
+
+XP_PER_MESSAGE = 5
+XP_COOLDOWN = 45
+
+MAX_WARNINGS = 3
+
+DEFAULT_WELCOME = "👋 Grubumuza hoş geldin {isim}!"
